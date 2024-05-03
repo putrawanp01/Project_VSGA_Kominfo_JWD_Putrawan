@@ -1,0 +1,17 @@
+CREATE TABLE tb_anggota (
+    anggota_id INT(11) NOT NULL AUTO_INCREMENT,
+    anggota_name VARCHAR(100) NOT NULL,
+    jenis_kelamin ENUM('L', 'P') NOT NULL,
+    status_anggota ENUM('Aktif', 'Tidak Aktif') NOT NULL,
+    alamat_anggota TEXT NOT NULL,
+    gambar_anggota VARCHAR(255), -- Kolom untuk menyimpan nama file gambar anggota
+    PRIMARY KEY(anggota_id),
+    UNIQUE KEY(anggota_name)
+);
+
+CREATE TABLE tb_clien (
+      clien_id INT(11) NOT NULL AUTO_INCREMENT,
+      clien_name VARCHAR(100) NOT NULL,
+      status_clien enum('Aktif','Tidak aktiv') NOT NULL,
+      PRIMARY KEY(clien_id)
+);

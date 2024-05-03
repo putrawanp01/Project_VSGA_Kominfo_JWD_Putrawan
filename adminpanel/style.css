@@ -1,0 +1,133 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+aside {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(199, 127, 18);
+  border: 1px solid goldenrod;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.brand {
+  width: 80px;
+}
+
+.user {
+  font-weight: bold;
+  padding-top: 10px;
+  color: #cccccc;
+  text-shadow: 2px 2px 5px black;
+}
+
+main {
+  margin-left: 210px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  padding: 10px 20px;
+  margin: 5px 0 5px 0;
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+}
+
+nav a:hover {
+  background-color: rgb(199, 127, 18);
+
+  border: 1px solid goldenrod;
+}
+
+nav .icon {
+  width: 25px;
+  float: left;
+  padding-right: 10px;
+}
+
+.info {
+  background-color: #f5f7fa;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+table {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+img.hide:hover {
+  cursor: pointer;
+  transition: 0.1s step-end;
+  width: 35px;
+}
+
+table th {
+  border: 1px solid black;
+  padding: 8px;
+  background-color: #ecbba3;
+}
+
+table td {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+}
+
+.button {
+  width: 17em;
+  height: 3em;
+  border-radius: 5em;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 5px #ecbba3;
+  border: none;
+  background-color: #e4f3e9;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5;
+}
+
+.button::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #22a160 0%, #f9f047 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.button:hover::before {
+  width: 17em;
+}
